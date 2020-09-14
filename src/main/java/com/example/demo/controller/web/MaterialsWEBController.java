@@ -52,7 +52,7 @@ public class MaterialsWEBController {
     String create(Model model){
         MaterialsForm materialsForm = new MaterialsForm();
         model.addAttribute("materialsForm", materialsForm);
-        return "customersAdd";
+        return "materialsAdd";
     }
 
     @PreAuthorize("hasRole('ADMIN')")

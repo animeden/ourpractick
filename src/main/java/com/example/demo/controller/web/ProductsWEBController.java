@@ -110,6 +110,7 @@ public class ProductsWEBController {
         model.addAttribute("mavs1", mavs1);
         Map<String, String> mavs2 = preciousStonesService.getall().stream()
                 .collect(Collectors.toMap(PreciousStones::getId, PreciousStones::getName));
+        model.addAttribute("mavs2", mavs2);
 
         productsForm.setName(products.getName());
 

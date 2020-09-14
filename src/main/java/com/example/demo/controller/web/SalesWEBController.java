@@ -104,6 +104,7 @@ public class SalesWEBController {
         model.addAttribute("mavs1", mavs1);
         Map<String, String> mavs2 = customersService.getall().stream()
                 .collect(Collectors.toMap(Customers::getId, Customers::getName));
+        model.addAttribute("mavs2", mavs2);
 
         salesForm.setProductId(sales.getProductId().getId());
 
